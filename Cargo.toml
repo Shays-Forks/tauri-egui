@@ -14,10 +14,10 @@ tauri = { git = "https://github.com/tauri-apps/tauri", rev = "bd29b05" }
 tauri-runtime = { git = "https://github.com/tauri-apps/tauri", rev = "bd29b05" }
 tauri-runtime-wry = { git = "https://github.com/tauri-apps/tauri", rev = "bd29b05" }
 egui = "0.22"
-eframe = { package = "eframe_tao", git = "https://github.com/tauri-apps/egui", branch = "0.21", version = "0.23.0" }
-egui-winit = { package = "egui-tao", git = "https://github.com/tauri-apps/egui", branch = "0.21", version = "0.23.0" }
-egui_glow = { package = "egui_glow_tao", git = "https://github.com/tauri-apps/egui", branch = "0.21", version = "0.23.0" }
-glutin_tao = { package = "glutin_tao", git = "https://github.com/tauri-apps/glutin", branch = "0.31", version = "0.33.0" }
+eframe = { package = "eframe_tao", git = "https://github.com/Shays-Forks/egui" }
+egui-winit = { package = "egui-tao", git = "https://github.com/Shays-Forks/egui" }
+egui_glow = { package = "egui_glow_tao", git = "https://github.com/Shays-Forks/egui" }
+glutin_tao = { package = "glutin_tao", git = "https://github.com/tauri-apps/glutin" }
 glutin = { version = "0.30" }
 glow = "0.12"
 rand = "0.8"
