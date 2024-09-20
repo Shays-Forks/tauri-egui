@@ -5,14 +5,14 @@ edition = "2021"
 license = "Apache-2.0 OR MIT"
 readme = "README.md"
 homepage = "https://tauri.app"
-categories = [ "gui", "tauri" ]
+categories = ["gui", "tauri"]
 description = "A Tauri plugin for the egui library"
 
 [dependencies]
 thiserror = "1"
-tauri = { version = "=2.0.0-alpha.10", path = "../tauri/core/tauri" }
-tauri-runtime = { version = "=0.13.0-alpha.6", path = "../tauri/core/tauri-runtime" }
-tauri-runtime-wry = { version = "=0.13.0-alpha.6", path = "../tauri/core/tauri-runtime-wry" }
+tauri = { git = "https://github.com/tauri-apps/tauri", rev = "bd29b05" }
+tauri-runtime = { git = "https://github.com/tauri-apps/tauri", rev = "bd29b05" }
+tauri-runtime-wry = { git = "https://github.com/tauri-apps/tauri", rev = "bd29b05" }
 egui = "0.22"
 eframe = { package = "eframe_tao", git = "https://github.com/tauri-apps/egui", branch = "0.21", version = "0.23.0" }
 egui-winit = { package = "egui-tao", git = "https://github.com/tauri-apps/egui", branch = "0.21", version = "0.23.0" }
@@ -26,15 +26,15 @@ tao = "0.19"
 log = "0.4"
 
 [dev-dependencies]
-tauri = { version = "=2.0.0-alpha.10", path = "../tauri/core/tauri" }
+tauri = { git = "https://github.com/tauri-apps/tauri", rev = "bd29b05" }
 egui_demo_app = { path = "examples/egui_demo_app" }
 
 [target."cfg(any(target_os = \"linux\", target_os = \"dragonfly\", target_os = \"freebsd\", target_os = \"openbsd\", target_os = \"netbsd\"))".dependencies]
-gtk = { version = "0.16", features = [ "v3_24" ] }
+gtk = { version = "0.16", features = ["v3_24"] }
 
 [[example]]
 name = "demo"
 path = "examples/demo/main.rs"
 
 [workspace]
-members = [ "examples/egui_demo_app" ]
+members = ["examples/egui_demo_app"]
